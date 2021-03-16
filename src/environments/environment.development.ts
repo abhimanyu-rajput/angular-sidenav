@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  apiServer: 'https://datalabs.rightfullabs.com/api',
+  apiServer: 'https://sample.com/api',
   mode: 'development'
 };

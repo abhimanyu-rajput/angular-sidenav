@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiServer: 'https://datalabs.rightfullabs.com/api',
+  apiServer: 'http://localhost:3000',
   mode:'local'
 };
 
