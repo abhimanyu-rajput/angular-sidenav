@@ -14,7 +14,7 @@ export class CommonService {
 
   private userDetails:BehaviorSubject<any> = new BehaviorSubject('');
   public getUserDetails = this.userDetails.asObservable();
-  private isLoggedIn = new BehaviorSubject(false); //Default value - false
+  private isLoggedIn = new BehaviorSubject(true); //Default value - false
 
   constructor(private _router: Router) { }
 
