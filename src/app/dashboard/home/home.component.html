@@ -1,0 +1,32 @@
+<div id="wrapper">
+    <div class="container-main">
+        <!-- Sidenav -->
+        <app-sidenav #SideNav [layoutSize]="layoutSize"></app-sidenav>
+        
+        <div class="r-col">
+            <!-- Top Nav -->
+            <app-topnav [layoutSize]="layoutSize" [sidenavref]="SideNav"></app-topnav>
+
+            <mat-toolbar class="sub-toolbar">              
+                <mat-toolbar-row>
+                    Sub Toolbar
+                </mat-toolbar-row>
+            </mat-toolbar>
+
+            <!-- Progressbar -->
+            <div *ngIf="_cs.loadingBar | async">
+                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            </div>
+
+            <div class="route-wrapper">
+                <br>
+                <div style="background-color: #fff;padding: 1rem;border-radius: 4px;" >
+                    <h1>Main Body</h1>
+                    <router-outlet></router-outlet>
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+</div>

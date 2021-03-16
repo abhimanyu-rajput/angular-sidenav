@@ -1,0 +1,67 @@
+<nav class="sidenavbar" [ngClass]="{'sidenavbar-hide':layoutXs, 'sidenavbar-closed':layoutMd}" #Nav>
+    <span class="sidenavbar__expand" #ToggleNav (click)="toggleSidenav()" *ngIf="!layoutXs">
+        <i class="bi bi-arrow-right-short"></i>
+    </span>
+
+    <div class="sidenavbar__brand">
+        <span class="sidenavbar__branditem">
+            <a href="#">
+            <i class="bi bi-intersect"></i>
+            <p>Brand Name</p>
+            </a>
+        </span>
+    </div>
+
+    <ul class="sidenavbar__list">
+        <li class="sidenavbar__listitem sidenavbar__listitem-active" id="dashboard" (click)="activeNav('dashboard')">
+            <a routerLink="/dashboard">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <p>Dashboard</p>
+            </a>
+        </li>
+
+        <li class="sidenavbar__listitem" id="profile" (click)="activeNav('profile')">
+            <input type="checkbox" id="chk-profile">
+            <a>
+                <label for="chk-profile"></label>
+                <i class="bi bi-bounding-box"></i>
+                <p>Profile</p>
+                <i class="bi bi-caret-down-fill"></i>
+            </a>
+            <ul class="sidenavbar__listitem-sublist">
+                <li routerLink="/dashboard">Notifications</li>
+                <li>Messages</li>
+                <li>Edit Profile</li>
+            </ul>
+        </li>
+
+        <li class="sidenavbar__listitem" id="service" (click)="activeNav('service')">
+            <input type="checkbox" id="chk-service">
+            <a>
+                <label for="chk-service"></label>
+                <i class="bi bi-stack"></i>
+                <p>Service</p>
+                <i class="bi bi-caret-down-fill"></i>
+            </a>
+            <ul class="sidenavbar__listitem-sublist">
+                <li routerLink="/dashboard">Message Service</li>
+                <li routerLink="/dashboard">Email Service</li>
+                <li routerLink="/dashboard">Other Service</li>
+            </ul>
+        </li>
+
+        <li class="sidenavbar__listitem" id="setting" (click)="activeNav('setting')">
+            <a routerLink="/dashboard">
+                <i class="bi bi-gear-fill"></i>
+                <p>Settings</p>
+            </a>
+        </li>
+
+        <li class="sidenavbar__listitem">
+            <a (click)="logout()">
+                <i class="bi bi-box-arrow-right"></i>
+                <p>Logout</p>
+            </a>
+        </li>
+    </ul>
+</nav>

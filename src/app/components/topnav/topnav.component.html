@@ -1,0 +1,14 @@
+<mat-toolbar class="top-navbar">              
+    <mat-toolbar-row>
+        <mat-icon class="pointer" *ngIf="layoutXs" (click)="toggleSideNav()">menu</mat-icon>
+        <span *ngIf="layoutXs" class="spacer"></span>
+        <span class="head-title"></span>
+        <span class="spacer"></span>
+        <!-- <mat-icon class="icon" aria-hidden="false" aria-label="heart icon">favorite</mat-icon>
+        <mat-icon class="icon" aria-hidden="false" aria-label="delete icon">delete</mat-icon> -->
+        <span class="profile">
+        <img src="assets/images/profilepic.jpg" class="profile__pic" />
+        </span>
+
+    </mat-toolbar-row>
+</mat-toolbar>

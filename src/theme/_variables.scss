@@ -1,0 +1,43 @@
+/*===== CSS Variable =====*/
+:root{
+    --header-height: 3rem;
+    --nav-width: 68px;
+    --nav-max-width: 180px;
+    /*===== Colors =====*/
+    --primary-color: #008ef5;
+    --primary-color-light: #AFA5D9;
+    --secondary-color: #00d2f5;
+    --secondary-color-light: #AFA5D9;
+    --danger-color: #ff1f1f;
+    --danger-color-light: #AFA5D9;
+    --success-color: #31ad00;
+    --success-color-light: #AFA5D9;
+    --warning-color: #fcb000;
+    --warning-color-light: #AFA5D9;
+
+    --color-light: #AFA5D9;
+    --color-dark: #333333;
+    --color-gray: #e1e5ee;
+    --orange-light: #ffce44;
+    --orange-dark: #ff831f;
+
+    --white-color: #FFFFFF;
+    --bg-color: #f3f3f3;
+    --bg-dark-color: #272727;
+    --bg-light-color: #F7F6FB;
+
+    --topnav-bg: #eae9ee;
+    --header-bg: #eae9ee;
+    --header-light-bg: #eae9ee;
+    --header-dark-bg: #243784;
+
+    --sidenav-bg: #333333;
+    --sidenav-light-bg: #666666;
+
+    /*===== Font and typography =====*/
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+  
+    /*===== z index =====*/
+    --z-fixed: 100;
+}

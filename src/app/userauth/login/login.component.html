@@ -1,0 +1,18 @@
+<div fxLayout="column" class="login" fxLayoutAlign="center center" >
+    <h1 class="title">Side Navigation</h1>
+    <div class="login__box">
+        <h2 class="login__title">Sign In</h2>
+
+        <input type="text" name="userName" [(ngModel)]="user['name']" id="userName" placeholder="User name">
+
+        <input type="password" name="passwd" [(ngModel)]="user['password']" id="passwd" placeholder="Password">
+
+        <button #LoginBtn type="button" class="login__btn">Login</button>
+
+        <div class="subtitle">
+            <a href="#">Forget Password</a> | <a href="#">Register</a>
+        </div>
+    </div>
+
+    <footer>Sidenav @{{year}} All right reserved.</footer>
+</div>

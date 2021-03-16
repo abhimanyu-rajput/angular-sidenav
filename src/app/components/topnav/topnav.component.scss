@@ -1,0 +1,23 @@
+// Mat Top Nav
+.icon {
+    padding: 0 14px;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+
+.head-title {
+    font-size: 1rem;
+}
+
+.profile{
+    &__pic {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+}
+
+mat-toolbar-row {
+    padding-left: 25px;
+}
